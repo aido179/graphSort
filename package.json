@@ -1,0 +1,25 @@
+{
+  "name": "graphSort",
+  "version": "0.1.0",
+  "description": "Partially sort nodes on a directed graph. Built to rank data acquired from pairwise comparisons made by humans.",
+  "main": "dist/graphSort.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "graph",
+    "sort",
+    "digraph",
+    "partial"
+  ],
+  "author": "Aidan Breen <aido179@yahoo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jshint": "^1.9.2",
+    "gulp-mocha": "^2.0.0"
+  }
+}
