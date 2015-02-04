@@ -21,5 +21,14 @@
     "gulp": "^3.8.10",
     "gulp-jshint": "^1.9.2",
     "gulp-mocha": "^2.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aido179/graphSort.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aido179/graphSort/issues"
+  },
+  "homepage": "https://github.com/aido179/graphSort"
 }
