@@ -4,6 +4,7 @@
 
 var GraphSort = function(){
     this.nodes = [];
+    this.nodesById = {};
     this.edges = [];
     this.top = {};
     //this should let us know if we need to recalculate sortOrder
@@ -31,6 +32,7 @@ GraphSort.prototype.checkNodeExists = function(node){
 GraphSort.prototype.addNode = function(node){
     if (this.checkNodeExists(node)===false){
         this.nodes.push(node);
+        this.nodesById[node.id] = node;
         if(node.getSortOrder() > this.top){
             this.top = node;
         }else{
@@ -116,6 +118,7 @@ GraphSort.prototype.getTies = function(){
 */
 function GraphNode(graphIn, val){
     this.value = val;
+    this.id = getId();
     this.graph = graphIn;
     this.sortOrder = 1;
     this.children = [];
@@ -183,6 +186,13 @@ function pathsObj(){
 pathsObj.prototype.addPath = function(pathArray){
     this.paths.push(pathArray);
 };
+function makeCounter() {
+    var i = 0;
+    return function() {
+        return i++;
+    };
+}
+var getId = makeCounter();
 
 module.exports = {
     Graph: GraphSort,

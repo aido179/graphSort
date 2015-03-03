@@ -2,7 +2,7 @@
   "name": "graphSort",
   "version": "0.1.0",
   "description": "Partially sort nodes on a directed graph. Built to rank data acquired from pairwise comparisons made by humans.",
-  "main": "dist/graphSort.js",
+  "main": "js/graphSort.js",
   "directories": {
     "test": "test"
   },
